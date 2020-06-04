@@ -63,10 +63,6 @@
     "*.{js,less,md}": [
       "prettier --write",
       "git add"
-    ],
-    "*.js": [
-      "eslint --fix",
-      "git add"
     ]
   }
 }
