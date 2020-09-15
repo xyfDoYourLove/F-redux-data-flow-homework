@@ -1,7 +1,8 @@
 {
   "parser": "babel-eslint",
   "extends": [
-    "airbnb",
+    "airbnb-base",
+    "airbnb/rules/react",
     "prettier",
     "prettier/react",
     "plugin:jest/recommended",
