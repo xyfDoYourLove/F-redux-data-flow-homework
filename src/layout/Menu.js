@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { modules } from '../utils';
+import { menuOptions } from '../utils';
 import './Menu.scss';
 
 class Menu extends Component {
@@ -11,7 +11,7 @@ class Menu extends Component {
           <li className="nav-item">
             <Link to="/">首页</Link>
           </li>
-          {modules.map(({ name, path }) => (
+          {menuOptions.map(({ name, path }) => (
             <li className="nav-item" key={name}>
               <Link to={path}>{name}</Link>
             </li>

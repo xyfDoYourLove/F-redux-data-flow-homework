@@ -3,7 +3,7 @@ import Profile from '../views/Profile';
 import NOTIFICATION from '../views/Notification';
 import REPORT from '../views/Report';
 
-export const modules = [
+export const menuOptions = [
   { name: '个人信息', path: '/profile', permissionCode: 'PROFILE', component: <Profile /> },
   {
     name: '通知中心',

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './layout/Header';
 import Menu from './layout/Menu';
 import Home from './views/Home';
-import { modules } from './utils';
+import { menuOptions } from './utils';
 import './App.scss';
 
 class App extends Component {
@@ -18,7 +18,7 @@ class App extends Component {
               <Route exact path="/">
                 <Home />
               </Route>
-              {modules.map(({ path, component }) => (
+              {menuOptions.map(({ path, component }) => (
                 <Route key={path} path={path}>
                   {component}
                 </Route>
