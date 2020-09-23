@@ -6,12 +6,10 @@ import Menu from './layout/Menu';
 import Home from './views/Home';
 import { menuOptions } from './utils';
 import './App.scss';
-import { getUserInfo } from './actions';
 
 class App extends Component {
   render() {
     const permissions = this.props.isLogin ? this.props.userInfo.permissions : ['REPORT'];
-    console.log(this.props.isLogin);
     return (
       <div className="app">
         <Router>
